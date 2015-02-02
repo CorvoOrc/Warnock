@@ -44,7 +44,7 @@ namespace HiddenLineRemoval
             else { pos = Position.back; }
             scale = Convert.ToInt32(ScalenumericUpDown.Value);
 
-            // Use parsing dfx file
+            // Parsing dfx file
             Parse myParse = new Parse();
             string result;
             try
@@ -69,6 +69,7 @@ namespace HiddenLineRemoval
             for (int i = 0; i < plot.Count; ++i)
             {
                 graphics.DrawRectangle(new Pen(new LinearGradientBrush(plot[i], colors[_colors[i] % colors.Count], colors[_colors[i] % colors.Count], LinearGradientMode.BackwardDiagonal)), (plot[i].X + x_move) * scale, (plot[i].Y + y_move) * scale, plot[i].Width * scale, plot[i].Height * scale);
+                // another various of filling
                 //graphics.FillRectangle(Brushes.Tomato, (plot[i].X + x_move), (plot[i].Y + y_move), plot[i].Width + x_move, plot[i].Height + y_move);
                 //graphics.FillRectangle(new LinearGradientBrush(plot[i], colors[_colors[i] % colors.Count], colors[_colors[i] % colors.Count], LinearGradientMode.BackwardDiagonal), (plot[i].X + x_move) * scale, (plot[i].Y + y_move) * scale, plot[i].Width * scale, plot[i].Height * scale);
             }
