@@ -13,3 +13,5 @@ and p is the number of pixels in the viewport
 
 For more information:
 http://www.cs.sun.ac.za/~lvzijl/courses/rw778/grafika/OpenGLtuts/Big/graphicsnotes009.html
+
+File "stesh_fortest.dxf" is sample. 
